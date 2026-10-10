@@ -10,11 +10,6 @@ Our goal is to make digital inventory management simple, accessible, and practic
 
 ---
 
-## 🎨 Interactive Figma Prototype
-
-🚀 **[Click here to explore the StockSathi Prototype](PASTE_YOUR_FIGMA_PROTOTYPE_LINK_HERE)**
-
-The interactive prototype demonstrates the proposed interface and workflows for inventory tracking, AI-based message extraction, udhaar management, demand forecasting, and daily reports.
 
 ---
 
