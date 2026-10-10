@@ -1,0 +1,20 @@
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+}
+:root {
+  --background: #f5f7f6;
+  --foreground: #10251e;
+  --border: #e2e8e5;
+  --primary: #059669;
+  --primary-foreground: #ffffff;
+  --card: #ffffff;
+  --muted: #eef3f0;
+  --muted-foreground: #64746d;
+}
