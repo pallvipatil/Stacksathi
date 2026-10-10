@@ -1,9 +1,19 @@
 import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import fs from 'node:fs'
 import path from 'node:path'
 
-import siteConfiguration from './.sathi/make/site.json'
+// The Figma Make toolchain generates site.json locally; it isn't committed, so fall back to defaults when absent.
+function loadSiteConfiguration(): FigmaSiteConfiguration {
+  for (const candidate of ['./.sathi/make/site.json', './.figma/make/site.json']) {
+    const file = path.resolve(__dirname, candidate)
+    if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, 'utf-8'))
+  }
+  return {}
+}
+
+const siteConfiguration = loadSiteConfiguration()
 
 
 // Vite config — https://vitejs.dev/config/
